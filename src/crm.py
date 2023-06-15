@@ -15,7 +15,7 @@ class MainWindow(QWidget):
         super().__init__(*args, **kwargs)
 
         self.setWindowTitle("Control Room Manager")
-        self.setWindowIcon(QIcon('./assets/chum.png'))
+        self.setWindowIcon(QIcon('./assets/icon.png'))
         self.setContentsMargins(0, 0, 20, 20)
         self.setProperty("class", "Main")
 
@@ -468,5 +468,5 @@ if __name__ == '__main__':
     window = MainWindow()
     window.show()
 
-    app.setStyleSheet(Path('sheet.qss').read_text())
+    app.setStyleSheet(Path('./styles/sheet.qss').read_text())
     sys.exit(app.exec())

@@ -28,14 +28,14 @@ Usage
 
 1. Run the program:
 
-   python crm.py
+   python3 crm.py
 
 2. Use the following commands to interact with the contact book:
-
-   - `add`: Add a new contact to the book.
-   - `delete`: Delete an existing contact from the book.
-   - `export`: Export contacts to a CSV file.
-   - `exit`: Quit the program.
+   
+   Use the GUI To add, remove, and edit Contacts! The book saves your contacts to assets/saveData/contacts.json
+   every time you do an action, so you don't need to worry about losing your stuff! Click on the profile picture
+   in the bottom most box to swap it out with a desired image! You can also Export to a CSV file, also located in
+   assets/saveData! Enjoy <|:D 
 
 File Structure
 --------------
@@ -56,7 +56,7 @@ ControlRoom/
   requirements.txt
 
 - `.venv/`: Virtual environment directory (created if you set up a virtual environment).
-- `assets/`: Folder containing asset files, including the `saveData/` directory where the `contacts.json` file is stored.
+- `assets/`: Folder containing asset files, including the `saveData/` directory where the `contacts.json` file is stored, and the `contacts.csv` files get exported to.
 - `crm.py`: The main Python file containing the contact book program.
 - `sheet.qss`: The style sheet file for customizing the program's appearance.
 - `README.md`: The documentation file you're currently reading.
